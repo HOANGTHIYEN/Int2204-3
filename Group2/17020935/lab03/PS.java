@@ -87,4 +87,16 @@ public class PS {
 	}
 	else return false; 
     }
+	public static void main(String[] args) {
+        PS phanSo1=new PS(-1,2);    
+        PS phanSo2=new PS(-1,3); 
+         
+        
+        phanSo1.cong(phanSo2);
+        phanSo1.tru(phanSo2);
+        phanSo1.nhan(phanSo2);
+        phanSo1.chia(phanSo2);
+	System.out.println(phanSo1.equals(phanSo2));
+    }
+	
 }
