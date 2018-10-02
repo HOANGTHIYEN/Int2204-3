@@ -1,6 +1,36 @@
-package com.company;
-
 public class bai3{
+    public class table{ //cai ban
+        private String kind;// Loai ban
+        private int high; //chieu cao (cm)
+        private int cost; // gia thanh (vnd)
+
+        public String getKind() {
+            return this.kind;
+        }
+        public void setKind (String a) {
+            this.kind = a;
+        }
+
+        public int getHigh() {
+            return this.high;
+        }
+        public void setHigh (int a) {
+            this.high = a;
+        }
+
+        public int getCost() {
+            return this.cost;
+        }
+        public void setCost (int a) {
+            this.cost = a;
+        }
+
+        public boolean isCheap () { // re hay dat
+            if (this.cost < 100) return true;
+            else return false;
+        }
+    }
+
     public class laptop{ //cai laptop
         public String CPU; // chip CPU
         public String GPU; // card do hoa
@@ -35,37 +65,7 @@ public class bai3{
             this.cost = a;
         }
     }
-    public class table{ //cai ban
-        private String kind;// Loai ban
-        private int high; //chieu cao (cm)
-        private int cost; // gia thanh (vnd)
 
-        public String getKind() {
-            return this.kind;
-        }
-        public void setKind (String a) {
-            this.kind = a;
-        }
-
-        public int getHigh() {
-            return this.high;
-        }
-        public void setHigh (int a) {
-            this.high = a;
-        }
-
-        public int getCost() {
-            return this.cost;
-        }
-        public void setCost (int a) {
-            this.cost = a;
-        }
-
-        public boolean isCheap () { // re hay dat
-            if (this.cost < 100) return true;
-            else return false;
-        }
-    }
     public class room{ // phong tro
         public int number; // so phong
         public int S; // dien tich
@@ -101,7 +101,45 @@ public class bai3{
         }
     }
 
+    public class Mycat{ // con meo
+        public String kind; // loai meo
+        public String color; // mau long
+        public int weight; // can nang
+        public String exclaim; // tieng keu
 
+        public String getKind() {
+            return this.kind;
+        }
+        public void setKind(String a) {
+            this.kind = a;
+        }
+
+        public String getColor() {
+            return this.color;
+        }
+        public void setColor (String a) {
+            this.color = a;
+        }
+
+        public int getWeight() {
+            return this.weight;
+        }
+        public void setWeight (int a) {
+            this.weight = a;
+        }
+
+        public String getExclaim() {
+            return this.exclaim;
+        }
+        public void setExclaim (String a) {
+            this.exclaim = a;
+        }
+        public boolean heathycat() { // con meo co khoe manh hay khong?
+            if (this.exclaim.equals("meow meow"))
+                return true ;
+            else return false;
+        }
+    }
 
     public class schoolbag{ // cai cap sach
         private String kind;// Loai cap (balo)
@@ -169,46 +207,8 @@ public class bai3{
             this.color = a;
         }
     }
-    public class dog{ // con cho
-        public String kind; // loai cho
-        public String color; // mau long
-        public int weight; // can nang
-        public String exclaim; // tieng keu
 
-        public String getKind() {
-            return this.kind;
-        }
-        public void setKind(String a) {
-            this.kind = a;
-        }
-
-        public String getColor() {
-            return this.color;
-        }
-        public void setColor (String a) {
-            this.color = a;
-        }
-
-        public int getWeight() {
-            return this.weight;
-        }
-        public void setWeight (int a) {
-            this.weight = a;
-        }
-
-        public String getExclaim() {
-            return this.exclaim;
-        }
-        public void setExclaim (String a) {
-            this.exclaim = a;
-        }
-        public boolean heathycat() { // con meo co khoe manh hay khong?
-            if (this.exclaim.equals("gau gau"))
-                return true ;
-            else return false;
-        }
-    }
-    public class student{ //  sv
+    public class MyFriend{ // ban hoc
         private String name;//  ten
         private int high; // chieu cao
         private String colorhair; // mau toc
@@ -247,7 +247,7 @@ public class bai3{
         private String name;//  ten duong
         private int large; // do rong con duong
         private int leight; // chieu dai
-        private int nameOfRoad; // ten con duong
+        private int CarsPerSecond; // so xe chay qua trong 1s
 
         public String getName() {
             return this.name;
@@ -271,13 +271,13 @@ public class bai3{
         }
 
         public int getCar() {
-            return this.nameOfRoad;
+            return this.CarsPerSecond;
         }
         public void setCar (int a) {
-            this.nameOfRoad = a;
+            this.CarsPerSecond = a;
         }
         public boolean TacDuong () { // co tac duong hay khong
-            if (this.nameOfRoad == 10) return true;
+            if (this.CarsPerSecond == 10) return true;
             else return false;
         }
     }

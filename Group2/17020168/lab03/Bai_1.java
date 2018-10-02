@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Bai_1 {
@@ -29,10 +30,8 @@ public class Bai_1 {
 		a=sc.nextInt();
 		b=sc.nextInt();
 		int c;
-		int n
 		c = uoc_chung(a,b);
 		System.out.println(c);
-		n = sc.nextInt();
-		System.out.println(fibonaci(n));
+		System.out.println(fibonaci(20));
 	}
 }
