@@ -15,11 +15,19 @@ import static org.junit.Assert.*;
 
 public class BMITest {
     @Test
-    public void testGetBMI() {
+    public void testGetBMI1() {
         assertEquals("Binh thuong",BMI.GetBMI(61, 1.78));
+    }
+    public void testGetBMI2() {
         assertEquals("Thieu can",BMI.GetBMI(56, 1.8));
+     }
+    public void testGetBMI3() {
         assertEquals("Thua can",BMI.GetBMI(80, 1.8));
+    }
+    public void testGetBMI4() {
         assertEquals("Beo phi",BMI.GetBMI(90, 1.6));
+    }
+    public void testGetBMI5() {
         assertEquals("Binh thuong",BMI.GetBMI(70, 1.78));
     }
 }
