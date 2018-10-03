@@ -112,12 +112,13 @@ public class PhanSo {
 	// phương thức so sánh 2 phân số 
 	public boolean equals (Object obj)
 	{
-		if (obj instanceof PhanSo)
+		if ( obj instanceof PhanSo)
 		{
-			PhanSo other = (PhanSo)obj;
-			if(other.tu *this.mau == other.mau *this.tu)
-				return true;
+			PhanSo other =(PhanSo) obj;
+			if (this.tu *other .mau == other.tu *this.mau )
+				return true; 
 		}
 		return false;
+		
 	}
 }

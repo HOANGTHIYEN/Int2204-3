@@ -31,4 +31,4 @@ public class Ex1 {
 		System.out.println("So Fibonaci thu n la: " + Vidu.Fibo(n));
 		
 	}
-}
+} 
