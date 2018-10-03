@@ -25,13 +25,13 @@ public class Bai1 {
 
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
-        Bai1 b1 = new Bai1();
+	Bai1 b1 = new Bai1();    
         int a,b,n;
         a=scan.nextInt();
         b=scan.nextInt();
         n=scan.nextInt();
 
-        System.out.println("UCLN cua a & b là : " + b1.ucln(a,b));
+	    System.out.println("UCLN cua a & b là : " + b1.ucln(a,b));
         System.out.print("fibonaci thu "+n+" bang " + b1.fibonaci(n));
     }
 }
