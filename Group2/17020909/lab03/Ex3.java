@@ -111,8 +111,7 @@ public class Book {
 		return Tacgia;
 	}
 }
-
-//Doi tuong hinh chu nhat
+ //Doi tuong hinh chu nhat
 public class HCN {
 	private float Dai; //Chieu dai hinh chu nhat
 	private float Rong; //Chieu rong hinh chu nhat
@@ -128,4 +127,4 @@ public class HCN {
 	public float getRong() {
 		return Rong;
 	}
-}
+} 
