@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c043d027-7fd1-488d-a261-e4ed478ac398" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../lab04/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CamCaoPhong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CamSanh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HoaQua.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuaCam.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1504265950">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="10" />
+          <entry key="java" value="2255" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2255" />
+          <entry key="PLAIN_TEXT" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="12" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1999669731">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/HoaQua.java" />
+        <option value="$PROJECT_DIR$/src/CamCaoPhong.java" />
+        <option value="$PROJECT_DIR$/src/CamSanh.java" />
+        <option value="$PROJECT_DIR$/src/QuaCam.java" />
+        <option value="$PROJECT_DIR$/src/Shape.java" />
+        <option value="$PROJECT_DIR$/src/Circle.java" />
+        <option value="$PROJECT_DIR$/src/Square.java" />
+        <option value="$PROJECT_DIR$/src/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="27" />
+    <option name="width" value="683" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lab05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab05" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="s&#9;FILE&#9;file:///home/sidz/school/ltnc/lab05/src/Square.java&#10;ca&#9;FILE&#9;file:///home/sidz/school/ltnc/lab05/src/CamSanh.java&#10;ho&#9;FILE&#9;file:///home/sidz/school/ltnc/lab05/src/HoaQua.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538905807035" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab03/practice3/.idea/workspace.xml</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/Bai1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/ConGa.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/GiangVien.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/LapTrinhVien.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/Laptop.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/MyWifi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/Nguoi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/PhanSo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/Phone.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/QuanLy.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/TheCat.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/TheDesk.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab03/Xe.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab04/Tuan_4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020182/lab04/test2.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/.idea/libraries/Arquillian_JUnit_Release.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/.idea/libraries/ant_ant_junit_1_6_5.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/.idea/modules.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/.idea/vcs.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/lab04.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/com/Bmi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/com/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/com/NumberOfBmi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/com/PracticeA.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/com/PracticeB.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/test/NumberOfBmiTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/test/PracticeATest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/src/test/PracticeBTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020569/lab03/Fibonacci.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020569/lab03/UCLN.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020607/lab04/TestWeek4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020607/lab04/Week4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020627/lab04/Cuong.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020627/lab04/CuongTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020656/lab04/BMI.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020656/lab04/BMITest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020656/lab04/Compare.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020656/lab04/CompareTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020656/lab04/GetMin.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020656/lab04/GetMinTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020666/lab04/input.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020666/lab04/test_output.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Backpack.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Car.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Cat.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Cellphone.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Dog.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/House.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Laptop.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Student.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/Teacher.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/bai1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab03/phanSo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab04/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020675/lab04/MainTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020688/lab04/Mang.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020688/lab04/MangTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020725/lab03/Ex1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020725/lab03/Ex3.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020725/lab03/PS.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020725/lab04/Functions.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020725/lab04/FunctionsTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020746/lab04/lab4/lb4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020746/lab04/lab4/lb4_Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/PS.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/Tuan3bai1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/bacsi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/bo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/con_cho.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/conga.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/conmeo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/convit.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/convoi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/emgai.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/emtrai.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020753/lab03/giaovien.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020777/lab04/Bbmmii.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020777/lab04/testbbmmii.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020782/lab04/GTLN.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020787/lab04/lap4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020787/lab04/lap4Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020787/lab04/testBMI.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020787/lab04/testminarray.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020803/lab04/tuan4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020803/lab04/tuan4Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020813/lab04/tuan4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020813/lab04/tuan4Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020819/lab03/Bai1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17021159/lab03/HangHoa.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17021159/lab03/student.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17021159/lab04/Lab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17021159/lab04/Lab04Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020168/lab03/Bai_1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020168/lab03/Computer.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020168/lab03/Developer.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020168/lab03/PS.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020168/lab03/Student.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020168/lab04/Lab_04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020168/lab04/Lab_04Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020875/lab04/labTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020875/lab04/lap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020909/lab03/Ex1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020909/lab03/Ex2.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020909/lab03/Ex3.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020909/lab04/Lab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020909/lab04/Lab04Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/PS.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/bai03.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/bai1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/bodoi.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/chuot.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/farmer.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/giamdoc.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/hotel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/laptop.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/oto.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/phanso.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/student.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/teacher.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab03/xemay.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab04/BMI.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab04/TestBMI.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab04/ktra.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab04/ktraMax.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020926/lab04/ktraMin.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020935/lab04/BMI.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020935/lab04/BMITest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020935/lab04/Maxvalue.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020935/lab04/MaxvalueTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020935/lab04/Minvalue.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17020935/lab04/MinvalueTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021004/lab04/lab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021004/lab04/lab04Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/BAiTapUCLN.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/Boss.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/ChuTichNuoc.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/Dodac.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/GiaoVien.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/HocTap.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/LapTrinhVien.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/Nhacua.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/PhanSo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/Sport.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/Student.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/TinhtoanPhanSo.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/TongHopDoiTuong.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab03/Travel.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab04/Bai_Tap_Lap_04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021012/lab04/Bai_Tap_Lap_04Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021032/lab04/Bttuan4.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021032/lab04/Bttuan4Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/.idea/description.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/.idea/modules.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/.idea/project-template.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/lib/hamcrest-core-1.3.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/lib/junit-4.12.jar</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/src/com/company/Lab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/src/com/company/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021066/lab04/tests/com/company/Lab04Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021083/lab04/BMITest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021083/lab04/BiggerTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021083/lab04/SmallestTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021083/lab04/lab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021091/lab04/Lab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021091/lab04/Lab04Test.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021110/lab04/lab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../17021110/lab04/testlab04.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../README.md</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020565/lab04/readme.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/17020819/Bai1.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/bai2/Bai2.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/../../../Group1/baitap Student</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="lab05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c043d027-7fd1-488d-a261-e4ed478ac398" name="Default Changelist" comment="" />
+      <created>1538901239495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538901239495</updated>
+      <workItem from="1538901242634" duration="4564000" />
+      <workItem from="1538905902224" duration="151000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4715000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.124242425" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" weight="0.32967034" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32952693" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32952693" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/CamSanh.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#186#187#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HoaQua.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#90#91#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CamCaoPhong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="3" selection-start-column="4" selection-end-line="5" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuaCam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#546#547#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#51#52#0" expanded="true" />
+            <element signature="e#74#75#0" expanded="true" />
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Circle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#80#81#0" expanded="true" />
+            <element signature="e#108#109#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding>
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="49" column="68" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
