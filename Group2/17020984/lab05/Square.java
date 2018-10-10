@@ -18,9 +18,22 @@ public class Square extends Rectangle {
     }
 
     public Square(double side, String color, boolean filled){
+        super(side, side, color, filled);
+        //this.setSide(side);
+    }
 
-        this.setSide(side);
-        this.setColor(color);
-        this.setFilled(filled);
+    public void setWidth(double side){
+        this.side = side;
+        this.setWidth(side);
+        this.setLength(side);
+    }
+    public void setLength(double side){
+        this.side = side;
+        this.setWidth(side);
+        this.setLength(side);
+    }
+
+    public String toString(){
+        return "side: " + this.getSide();
     }
 }

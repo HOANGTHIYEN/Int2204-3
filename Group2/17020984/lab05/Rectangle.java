@@ -28,6 +28,13 @@ public class Rectangle extends Shape{
         this.width = width;
     }
 
+    public Rectangle(double width, double length, String color, boolean filled){
+        super(color, filled);
+        this.width = width;
+        this.length = length;
+
+    }
+
     public double getArea(){
         return this.width * this.length;
     }
