@@ -1,18 +1,26 @@
-package bai1;
+package bai2;
 
 public class main {
     public static void main(String[] args) {
-        quaTao apple = new quaTao();
-        apple.show();
+        shape shape = new shape();
+        shape.setColor("blue");
+        shape.setFilled(true);
+        System.out.println(shape.toString());
+        System.out.println();
 
-        quaCam cam2 = new quaCam();
-        cam2.show();
+        Circle circle = new Circle(3, "red", true);
+        System.out.println(circle.toString());
+        System.out.println();
 
-        camCaoPhong cam = new camCaoPhong();
-        cam.show();
+        Rectangle rectangle = new Rectangle(3, 4);
+        rectangle.setColor("green");
+        rectangle.setFilled(false);
+        System.out.println(rectangle.toString());
+        System.out.println();
 
-        camSanh cam1 = new camSanh();
-        cam1.show();
+        Square square = new Square(5);
+        square.setColor("black");
+        square.setFilled(true);
+        System.out.println(square.toString());
     }
-
 }
