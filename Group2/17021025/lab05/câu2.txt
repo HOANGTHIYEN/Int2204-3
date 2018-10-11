@@ -1,0 +1,5 @@
+- trong biểu đồ trên có 4 quan hệ thừa kế.
+- lớp Circle thừa kế lớp Shape mà không phải lớp Rectangle bởi vì:
+lớp Circle có tất cả những chức năng mà Shape có, nhưng Rectangle và Circle
+ngoài những đặc điểm chung có hết trong Shape thì không còn đặc điểm chung nào giống nhau nữa.
+- PI nên để final vì PI là một hằng số.
