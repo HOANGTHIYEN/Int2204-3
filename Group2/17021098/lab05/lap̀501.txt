@@ -1,0 +1,94 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lab051;
+
+/**
+ *
+ * @author Admin
+ */
+   class hoaqua {
+             String tenhoaqua;
+             
+             int soluong;
+             String nguongoc;
+    
+   // public hoaqua(String Vtenhoaqua,double Vgiaban,int Vsoluong,String Vnguongoc){
+      // this.tenhoaqua =Vtenhoaqua;
+       // this.giaban =Vgiaban;
+       // this.soluong =Vsoluong;
+       // this.nguongoc =Vnguongoc;
+   // }
+      public void setTenhoaqua(String tenhoaqua){
+         this.tenhoaqua=tenhoaqua;
+        }
+      public String getTenhoaqua(){
+            return tenhoaqua;
+        }
+       public void setNguongoc(String nguongoc){
+            this.nguongoc=nguongoc;
+        }
+      public String getNguongoc(){
+            return nguongoc;
+        }
+      
+      public void setSoluong(int soluong){
+            this.soluong=soluong;
+        }
+      public int getSoluong(){
+            return soluong;
+        }
+     String getInfo(){      // TODO
+		return soluong+tenhoaqua;
+        
+    }
+}
+   class quacam extends hoaqua{
+        double giaban;
+        public void setGiaban(double giaban){
+            this.giaban=giaban;
+        }
+      public double getGiaban(){
+            return giaban;
+         
+        }
+       
+   }
+    class camcaophong extends quacam {
+        String muivi;
+        public void setmuivi(String muivi){
+         this.muivi=muivi;
+        }
+      public String getmuivi(){
+            return muivi;
+        
+        }
+    }
+      class quatao extends hoaqua{
+          double chiphi;
+
+    public double getChiphi() {
+        return chiphi;
+    }
+
+    public void setChiphi(double chiphi) {
+        this.chiphi = chiphi;
+    }
+         
+       
+      }
+public class Lab051 {
+
+  
+    public static void main(String[] args) {
+        // TODO code application logic here
+        hoaqua t= new hoaqua();
+        t.setTenhoaqua("quyt");
+        t.setSoluong(10);
+        t.setNguongoc("vietnam");
+        System.out.println(t.getInfo());
+    }
+    
+}
