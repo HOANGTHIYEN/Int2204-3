@@ -13,10 +13,10 @@ public class Rectangle extends Shape{
     }
 
     Rectangle(double width, double length, String color, boolean filled){
+        super(color,filled);
         this.width = width;
         this.length = length;
-        this.color = color;
-        this.filled = filled;
+
     }
 
     public double getLength() {
@@ -41,5 +41,13 @@ public class Rectangle extends Shape{
 
     public double getPerimeter(){
         return 2*(this.width+this.length);
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", length=" + length +
+                '}';
     }
 }

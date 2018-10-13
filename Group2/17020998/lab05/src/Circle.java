@@ -11,9 +11,8 @@ public class Circle extends Shape {
     }
 
     Circle(double radius, String color, boolean filled){
+        super(color,filled);
         this.radius = radius;
-        this.color = color;
-        this.filled = filled;
     }
 
     public double getRadius() {
@@ -32,4 +31,10 @@ public class Circle extends Shape {
         return 2*Pi*this.radius;
     }
 
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "color='" + color + '\'' +
+                '}';
+    }
 }
