@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class Layer extends Diagram{
+public class Layer{
     protected ArrayList<Shape> shapes;
 
     private String name;
