@@ -1,0 +1,52 @@
+package com.company;
+
+public class rectangle extends shape {
+    double width=1.0;
+    double length=1.0;
+    public rectangle(){}
+
+    public rectangle(String color, boolean filled){
+        this.width=1.0;
+        this.length=1.0;
+    }
+    public rectangle(double width, double length){
+        this.width=1.0;
+        this.length=1.0;
+    }
+    public  rectangle(double width, double length, String color, boolean filled){
+        super(color,filled);
+        this.length=length;
+        this.width=width;
+
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getLength() {
+        return length;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+    public double getArea(){
+        return this.width*this.length;
+    }
+    public double getperimeter(){
+        return this.width+this.length;
+    }
+
+    @Override
+    public String toString() {
+        return "rectangle{" +
+                "width=" + width +
+                ", length=" + length +
+                '}';
+    }
+}
