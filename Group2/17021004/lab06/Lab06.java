@@ -28,7 +28,8 @@ public class Lab06 extends Application {
         //di chuyen vat the
         XYlocation newLocation = new XYlocation(300, 100);
         circleObject.moving(newLocation);
-
+        
+        //khoi tao cac object
         layer1.add(circleObject);
         layer1.add(new CircleObject(new XYlocation(100, 100), 50,Color.AQUA));
         layer1.add(new TriangleObject(new XYlocation(200, 200), new XYlocation(300, 200), new XYlocation(300, 300),Color.BLUE));
@@ -39,8 +40,11 @@ public class Lab06 extends Application {
         primaryStage.setTitle("Lab 06");
         Group group = new Group();
         
-        diagram.deleteCircleObject();
-        layer1.deleteTriangleObject();
+        //lenh xoa object
+        //diagram.deleteCircleObject();
+        //layer1.deleteTriangleObject();
+        
+        
         for (Iterator it = layer1.iterator(); it.hasNext();) {
             Object elementShape = it.next();
             if (elementShape instanceof CircleObject){
