@@ -1,7 +1,7 @@
-package Lab06;
+﻿package Lab06;
 
 class Circle extends Shape{
-    protected double radius;
+    double radius;
     final double pi = 3.14;
     public Circle() {
     }
