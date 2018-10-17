@@ -1,4 +1,4 @@
-package Lab06;
+﻿package lab06;
 
 public class Shape {
     String color;
