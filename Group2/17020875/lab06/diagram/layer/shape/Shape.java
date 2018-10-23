@@ -1,23 +1,28 @@
+package diagram.layer.shape;
+
+import java.awt.*;
+
 public class Shape
 {
-    protected String color;
+    protected Color color;
     protected boolean filled;
+
     Shape()
     {
-        this.color = "red";
+        color = Color.ORANGE;
         this.filled = true;
     }
-    public Shape(String color, boolean filled)
+    public Shape(Color color, boolean filled)
     {
         this.color = color;
         this.filled = filled;
 
     }
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
@@ -28,4 +33,6 @@ public class Shape
     public boolean isFilled() {
         return filled;
     }
+
+
 }

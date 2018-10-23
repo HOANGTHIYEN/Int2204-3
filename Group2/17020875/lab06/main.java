@@ -1,35 +1,36 @@
-public class main {
-    public static void main(String[] args) {
-        Diagram d = new Diagram();
-        //test eraseTriangle
-        Layer l1 = new Layer();
-        l1.add(new Triangle(3, 4, 5));
-        l1.add(new Cricle(3));
-        l1.add(new Rectangle(4, 5));
-        l1.add(new Square(5));
-        d.add(l1);
-        for(int j = 0;j < l1.size();j ++)
-            l1.elementAt(j).info();
-        l1.eraseTriangle();
-        System.out.println("\nSau khi xoa hinh tam giac:");
-        for(int j = 0;j < l1.size();j ++)
-            l1.elementAt(j).info();
-        //test eraseCricle
-        Layer l2 = new Layer();
-        l2.add(new Cricle(3));
-        l2.add(new Cricle(2));
-        l2.add(new Triangle(3, 5, 2.5));
-        d.add(l2);
-        System.out.println("\nTruoc khi xoa hinh tron:");
-        for(int j = 0;j < d.size();j ++){
-            for(int k = 0;k < d.elementAt(j).size();k ++)
-                d.elementAt(j).elementAt(k).info();
-        }
-        d.eraseCricle();
-        System.out.println("\nSau khi xoa hinh tron:");
-        for(int j = 0;j < d.size();j ++){
-            for(int k = 0;k < d.elementAt(j).size();k ++)
-                d.elementAt(j).elementAt(k).info();
-        }
+import diagram.Diagram;
+import diagram.layer.Layer;
+import diagram.layer.shape.Circle;
+import diagram.layer.shape.Rectangle;
+import diagram.layer.shape.Square;
+import diagram.layer.shape.Triangle;
+
+import java.awt.*;
+
+public class main
+{
+    public static void main(String args[]) {
+        Layer layer1 = new Layer();
+
+        Rectangle rectangle1 = new Rectangle(Color.cyan, true, 10, 5, 0, 50, 100, 100);
+        Square square1 = new Square(Color.RED, true, 5, 150, 50, 200, 200);
+        Circle circle1 = new Circle(Color.ORANGE, true, 4, 300, 50);
+        Triangle triangle1 = new Triangle(Color.GREEN, true, 6, 6, 6, 400, 0, 450, 90, 500, 0);
+        layer1.addShape(rectangle1);
+        layer1.addShape(square1);
+        layer1.addShape(circle1);
+        layer1.addShape(triangle1);
+
+        Diagram diagram = new Diagram();
+        diagram.addLayer(layer1);
+        System.out.println("Before: ");
+        diagram.printAll();
+
+        diagram.removeAllCircle();
+        diagram.removeAllTriangle();
+        System.out.println("After: ");
+        diagram.printAll();
+
     }
+
 }
