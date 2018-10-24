@@ -12,7 +12,7 @@ public class CirclePane extends JPanel {
 
     @Override
     public  Dimension getPreferredSize(){
-        return new Dimension(1080,720);
+        return new Dimension(400,400);
     }
 
     @Override
