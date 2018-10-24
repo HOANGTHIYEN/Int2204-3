@@ -3,7 +3,7 @@ import ui.ShapePane;
 import javax.swing.*;
 import java.awt.*;
 
-public class mainUi {
+public class MainUi {
     public static void main(String args[]) {
 
         JFrame jFrame = new JFrame();
