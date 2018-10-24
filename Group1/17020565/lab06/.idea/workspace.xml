@@ -7,24 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a98891e-2434-4581-ac7c-eb5615b28124" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/diagram/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/DrawShape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab07/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab07/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab07/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab07/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab07/lab07.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/Diagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram/Diagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/layer/Layer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram/layer/Layer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/layer/shape/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram/layer/shape/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/layer/shape/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram/layer/shape/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/layer/shape/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram/layer/shape/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/layer/shape/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram/layer/shape/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/layer/shape/Toado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/diagram/layer/shape/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diagram/layer/shape/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CirclePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CirclePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab07/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +34,7 @@
     <session id="452791399">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
@@ -357,7 +340,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540365327555" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540365456496" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -400,15 +383,16 @@
       <workItem from="1539597615343" duration="6508000" />
       <workItem from="1539620026483" duration="934000" />
       <workItem from="1540016551608" duration="33000" />
-      <workItem from="1540358945072" duration="6200000" />
+      <workItem from="1540358945072" duration="6345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15381000" />
+    <option name="totallyTimeSpent" value="15526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18443497" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -419,7 +403,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
