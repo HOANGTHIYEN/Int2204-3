@@ -12,7 +12,7 @@ import java.awt.*;
 
 public class Main {
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle(new Position[]{
+        Square  square = new Square(new Position[]{
                 new Position(0,0),
                 new Position(200,0),
                 new Position(200,200),
@@ -20,7 +20,7 @@ public class Main {
         }, Color.BLUE, false);
 
         Layer layer = new Layer();
-        Square square = new Square(new Position[]{
+        Rectangle rectangle = new Rectangle(new Position[]{
                 new Position(0,0),
                 new Position(400,0),
                 new Position(400,200),

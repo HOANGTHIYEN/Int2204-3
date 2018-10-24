@@ -40,4 +40,9 @@ public class Circle extends Shape {
                 ", canMove=" + canMove +
                 '}';
     }
+
+    @Override
+    public boolean validate() {
+        return false;
+    }
 }

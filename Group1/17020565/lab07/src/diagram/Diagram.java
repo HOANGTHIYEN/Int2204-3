@@ -52,9 +52,12 @@ public class Diagram {
         jFrame.setLayout(new FlowLayout());
         for(Layer layer: listLayer){
             for(Shape shape: layer.listShape){
-                System.out.println(shape.toString());
-                DrawShape drawShape = new DrawShape(shape);
-                jFrame.add(drawShape);
+                if(shape.validate()){
+                    DrawShape drawShape = new DrawShape(shape);
+                    jFrame.add(drawShape);
+                }else {
+                    System.out.println(shape.toString() + " invalid");
+                }
             }
         }
 
