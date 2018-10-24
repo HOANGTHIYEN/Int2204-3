@@ -1,36 +1,30 @@
-class Circle extends Shape{
+import java.awt.*;
+
+class Circle extends Shape {
+    protected Point point;
     protected double radius;
-    final double pi = 3.14;
 
-    public Circle() {
+    public void draw(Graphics g) {
+        g.setColor(this.color);
+        g.fillOval(this.point.x, this.point.y, (int)this.radius, (int)this.radius);
     }
 
-    public Circle(double radius) {
-        this.radius = radius;
-    }
-
-    public Circle(double radius, String color, boolean filled, Coordinates conter) {
-        super(color, filled, conter);
-        this.radius = radius;
-    }
-
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
-
-    public double getArea(){
-        return radius*radius*pi;
-    }
-    public double getPerimeter(){
-        return 2*radius*pi;
-    }
     @Override
-    public void info(){
-        System.out.println("Day la hinh tron: (ban kinh) " + radius);
+    public void move() {
+        this.point.x += this.velocity.x;
+        this.point.y += this.velocity.y;
+
+        if (this.point.x <= 0 || (this.point.x + this.radius) >= Diagram.WIDTH) { // out of horizontal range
+            this.velocity.x = -this.velocity.x;
+        }
+
+        if (this.point.y <= 0 || (this.point.y + this.radius) >= Diagram.HEIGHT) { // out of vertical range
+            this.velocity.y = -this.velocity.y;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Circle[%s]", this.point);
     }
 }

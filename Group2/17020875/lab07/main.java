@@ -3,47 +3,31 @@ import diagram.layer.Layer;
 import diagram.layer.shape.Circle;
 import diagram.layer.shape.Rectangle;
 import diagram.layer.shape.Square;
-import diagram.layer.shape.Triangle;
+import ui.ShapePane;
 
+import javax.swing.*;
 import java.awt.*;
 
-public class main
-{
-    public static void main(String args[]) {
+public class Main {
+    public static void main(String[] args) {
+        Layer layer = new Layer();
+        Rectangle rectangle = new Rectangle(10,20);
+        Rectangle rectangle2 = new Rectangle(10,20);
+        Circle circle = new Circle(2);
+        Square square = new Square(20);
 
-        Layer layer1 = new Layer();
-        Layer layer2 = new Layer();
-
-        Rectangle rectangle1 = new Rectangle(Color.cyan, true, 10, 5, 0, 50, 100, 100);
-        Square square1 = new Square(Color.RED, true, 5, 150, 50, 200, 200);
-        Square square2 = new Square(Color.GREEN, true, 3, 250,150,300,300);
-        Circle circle1 = new Circle(Color.ORANGE, true, 4, 300, 50);
-        Circle circle2 = new Circle(Color.RED, true, 7, 400, 100);
-        Circle circle3 = new Circle(Color.BLUE, true, 3, 400, 200);
-        Triangle triangle1 = new Triangle(Color.GREEN, true, 6, 6, 6, 400, 0, 450, 90, 500, 0);
-
-        layer1.addShape(rectangle1);
-        layer1.addShape(circle2);
-        layer1.addShape(square2);
-        layer1.addShape(circle1);
-
-        layer1.addShape(circle3);
-        layer2.addShape(square1);
-        layer2.addShape(triangle1);
-
+        layer.addShape(rectangle);
+        layer.addShape(rectangle2);
+        layer.addShape(square);
+        layer.addShape(circle);
+//        System.out.println(layer.sizeOfList());
+//        layer.removeAllTriangle();
+//        System.out.println(layer.sizeOfList());
         Diagram diagram = new Diagram();
-        diagram.addLayer(layer1);
-        diagram.addLayer(layer2);
-        System.out.println("Before: ");
-        diagram.printAll();
-
-
-        diagram.phanLoai();
+        diagram.addShape(layer);
         diagram.removeAllCircle();
-        diagram.removeAllTriangle();
-        System.out.println("After: ");
         diagram.printAll();
+
 
     }
-
 }
