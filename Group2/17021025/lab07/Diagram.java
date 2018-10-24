@@ -1,50 +1,65 @@
 import java.util.ArrayList;
 
 public class Diagram {
+    final static public double pi = Math.PI;
+    private ArrayList<Layer> layerList = new ArrayList<>();
+    private int shapeNumber = 4;
 
-    ArrayList<Layer> diagram = new ArrayList<Layer>();
-
-    public void quy_hoach() {
-        Layer ly1 = new Layer(true);
-        Layer ly2 = new Layer(true);
-        Layer ly3 = new Layer(true);
-        Layer ly4 = new Layer(true);
-        Layer ly5 = new Layer(true);
-        for (Layer ly: diagram)
-        {
-            for (Shape s: ly.layer) {
-                if (s instanceof Circle){
-                    ly1.layer.add(new Circle(s.getX(), s.getY(), ((Circle) s).getRadian()));
-                }
-                else
-                if (s instanceof Rectangle) {
-                    ly2.layer.add (new Rectangle(s.getX(), s.getY(), ((Rectangle) s).getWidth(), ((Rectangle) s).getLength()));
-                }
-                else
-                if (s instanceof Square) {
-                    ly3.layer.add(new Square(s.getX(), s.getY(), ((Square) s).getSize()));
-                }
-                else
-                if (s instanceof Triangle) {
-                    ly4.layer.add(new Triangle(s.getX(), s.getY(), ((Triangle) s).getX2(), ((Triangle) s).getY2(),((Triangle) s).getX3(),((Triangle) s).getY3()));
-                }
-                else
-                if (s instanceof Hexagon) {
-                    int[] a = ((Hexagon) s).getX1();
-                    int[] b = ((Hexagon) s).getY1();
-                    int c = s.getX();
-                    int d = s.getY();
-                    ly5.layer.add(new Hexagon(c,d,a,b));
-                }
-
-            }
-        }
-        diagram.clear();
-        diagram.add(ly1);
-        diagram.add(ly2);
-        diagram.add(ly3);
-        diagram.add(ly4);
-        diagram.add(ly5);
+    public int getShapeNumber() {
+        return shapeNumber;
     }
 
+    void layerClassify() {
+        //Create new tempo blank list of layer
+        /**
+         * layer [0] : Circle layer
+         * layer [1] : Triangle layer
+         * layer [2] : Rectangle layer
+         * layer [3] : Square layer
+         */
+        ArrayList<Layer> tempoLayerList = new ArrayList<>();
+        for (int i = 0;i<shapeNumber ; i++ ){
+            tempoLayerList.add(new Layer());
+        }
+
+        for (Layer curLayer:layerList) {
+            for (Shape curShape:curLayer.getShapeList()) {
+                //If shape is a Circle
+                if (curShape instanceof Circle) {
+                    tempoLayerList.get(0).addShape(curShape);
+                }
+                //If shape is a Triangle
+                if (curShape instanceof  Triangle) {
+                    tempoLayerList.get(1).addShape(curShape);
+                }
+                //If shape is a Rectangle
+                if (curShape instanceof  Rectangle && !(curShape instanceof Square) ) {
+                    tempoLayerList.get(2).addShape(curShape);
+                }
+                //If shape is a Square
+                if (curShape instanceof  Square) {
+                    tempoLayerList.get(3).addShape(curShape);
+                }
+            }
+        }
+
+        layerList.clear();
+        layerList = (ArrayList<Layer>) tempoLayerList.clone();
+    }
+
+    public ArrayList<Layer> getLayerList() {
+        return layerList;
+    }
+
+    public void addLayer(Layer newLayer) {
+        this.layerList.add(newLayer);
+    }
+
+    public void deleteCircle(Layer layer) {
+        for (Shape curShape: layer.getShapeList()) {
+            if (curShape instanceof Circle) {
+                layer.getShapeList().remove(curShape);
+            }
+        }
+    }
 }
