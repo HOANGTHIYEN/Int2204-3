@@ -144,7 +144,7 @@ class Layer extends JPanel implements ActionListener{
             for (int j=i+1;j<shapes.size();j++){
                 if (shapes.get(i) instanceof Circle){
                     if (shapes.get(j) instanceof Circle){
-                        if (((Circle)shapes.get(i)).radius==((Circle)shapes.get(j)).radius){
+                        if (((Circle)shapes.get(i))==((Circle)shapes.get(j))){
                                 this.remove(j);
                                 j--;
                             }
