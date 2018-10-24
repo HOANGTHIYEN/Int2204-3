@@ -102,7 +102,7 @@ public class Layer{
             if(!newShape.contains(shapes.get(i))){
                 newShape.add(shapes.get(i));
                 System.out.println("done");
-
+                [.length - 1]
             }
         }
         shapes = newShape;
