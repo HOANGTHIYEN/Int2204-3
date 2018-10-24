@@ -1,37 +1,18 @@
 package diagram.layer.shape;
 
+import diagram.Position;
+
 import java.awt.*;
 
 public abstract class Shape {
-    protected double posX;
-    protected double posY;
+    public Position[] pos;
     protected Color color;
     protected boolean canMove;
 
-    public Shape() {
-    }
-
-    public Shape(double posX, double posY, Color color, boolean canMove) {
-        this.posX = posX;
-        this.posY = posY;
+    public Shape(Position[] pos, Color color, boolean canMove) {
         this.color = color;
         this.canMove = canMove;
-    }
-
-    public  double getPosX() {
-        return posX;
-    }
-
-    public void setPosX(double posX) {
-        this.posX = posX;
-    }
-
-    public double getPosY() {
-        return posY;
-    }
-
-    public void setPosY(double posY) {
-        this.posY = posY;
+        this.pos = pos;
     }
 
     public Color getColor() {
@@ -42,12 +23,32 @@ public abstract class Shape {
         this.color = color;
     }
 
-    public void move(double dodai, int huong){
+    public void move(int length, int huong){
         switch ( huong){
-            case 1 :posY = posY - dodai;
-            case 2 :posY = posY + dodai;
-            case 3 :posY = posY - dodai;
-            case 4 :posY = posY + dodai;
+            case 1 :{
+                for(Position position: pos){
+                    position.posY = (position.posY - length);
+                }
+                break;
+            }
+            case 2 :{
+                for(Position position: pos){
+                    position.posY = (position.posY + length);
+                }
+                break;
+            }
+            case 3 :{
+                for(Position position: pos){
+                    position.posX = (position.posX - length);
+                }
+                break;
+            }
+            case 4 :{
+                for(Position position: pos){
+                    position.posX = (position.posX + length);
+                }
+                break;
+            }
         }
     }
 }

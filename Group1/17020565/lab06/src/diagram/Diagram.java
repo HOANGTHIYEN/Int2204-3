@@ -2,11 +2,17 @@ package diagram;
 
 import diagram.layer.Layer;
 import diagram.layer.shape.Shape;
-import diagram.layer.shape.Triangle;
+import ui.DrawShape;
 
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class Diagram {
+    JButton removeTriangle = new JButton("Remove Triangle");
+    JFrame jFrame;
     public ArrayList<Layer> getListLayer() {
         return listLayer;
     }
@@ -15,6 +21,11 @@ public class Diagram {
 
     public Diagram() {
         listLayer = new ArrayList<>();
+        removeTriangle.addActionListener(e -> {
+            removeAllTriangle();
+            jFrame.hide();
+            printAll();
+        });
     }
 
     public void addShape(Layer layer) {
@@ -36,8 +47,20 @@ public class Diagram {
     }
 
     public void printAll() {
+        jFrame = new JFrame();
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setLayout(new FlowLayout());
         for(Layer layer: listLayer){
-            layer.printShape();
+            for(Shape shape: layer.listShape){
+                System.out.println(shape.toString());
+                DrawShape drawShape = new DrawShape(shape);
+                jFrame.add(drawShape);
+            }
         }
+
+        jFrame.add(removeTriangle);
+        jFrame.pack();
+        jFrame.setVisible(true);
+
     }
 }
