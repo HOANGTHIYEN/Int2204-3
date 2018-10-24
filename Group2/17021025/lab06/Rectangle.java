@@ -1,44 +1,33 @@
-class Rectangle extends Shape{
-    protected double width, length;
-    public Rectangle(){
-        width = 1.0;
-        length = 1.0;
-    }
-    public Rectangle(double width, double length){
-        this.width = width;
-        this.length = length;
-    }
+import java.awt.*;
 
-    public Rectangle(double width, double length, String color, boolean filled, Coordinates center) {
-        super(color, filled, center);
-        this.width = width;
-        this.length = length;
-    }
+class Rectangle extends Shape {
+    protected Point start;
+    protected int length;
+    protected int width;
 
-    public double getWidth() {
-        return width;
-    }
-
-    public void setWidth(double width) {
-        this.width = width;
-    }
-
-    public double getLength() {
-        return length;
-    }
-
-    public void setLength(double length) {
-        this.length = length;
-    }
-
-    public double getArea(){
-        return width*length;
-    }
-    public double getPerimeter(){
-        return (width + length)*2;
-    }
     @Override
-    public void info(){
-        System.out.println("Day la hinh chu nhat: (chieu dai, chieu rong) " + length + " " + width);
+    public void draw(Graphics g) {
+        g.setColor(color);
+        g.fillRect(start.x, start.y, width, length);
+    }
+
+    @Override
+    public void move() {
+        this.start.x += this.velocity.x;
+        this.start.y += this.velocity.y;
+
+        if (this.start.x <= 0 || this.start.x + this.width >= Diagram.WIDTH) {
+            this.velocity.x = -this.velocity.x;
+        }
+
+        if (this.start.y <= 0 || this.start.y + this.length >= Diagram.HEIGHT) {
+            this.velocity.y = -this.velocity.y;
+        }
+
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Rectangle[%s]", this.start);
     }
 }
