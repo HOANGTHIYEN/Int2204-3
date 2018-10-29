@@ -7,6 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="com.microsoft.aspnet:signalr:0.1.0-preview2-35174" level="project" />
+    <orderEntry type="library" exported="" name="com.microsoft.signalr:signalr:1.0.0-preview3-35501" level="project" />
+    <orderEntry type="library" name="org.slf4j:slf4j-jdk14:1.7.25" level="project" />
+    <orderEntry type="library" name="org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
   </component>
 </module>
