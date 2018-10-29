@@ -76,6 +76,14 @@ public class Layer{
 
     }
 
+    public void addHexagon(Shape Hexagon){
+
+        int size = shapes.size();
+        Hexagon.setIndex(size);
+        shapes.add(Hexagon);
+
+    }
+
     public Shape getShape(int index){
         return shapes.get(index);
     }

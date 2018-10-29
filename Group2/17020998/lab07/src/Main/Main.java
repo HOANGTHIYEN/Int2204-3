@@ -30,6 +30,7 @@ public class Main {
         diagram.getLayer(1).deleteSameShape();
 
         diagram.drawAllLayer();
+        diagram.filterLayer();
     }
 
 }
