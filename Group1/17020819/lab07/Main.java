@@ -30,13 +30,19 @@ public class Main {
                         toaDo D = new toaDo(200,300);
                         toaDo E = new toaDo(300,200);
                         toaDo F = new toaDo(200,100);
-                        
+                        toaDo G = new toaDo(10,10);
+			toaDo H = new toaDo(0,20);
+			toaDo J = new toaDo(10,30);
+			toaDo K = new toaDo(20,30);
+			toaDo L = new toaDo(30,20);
+			toaDo M = new toaDo(20,10);
                         layer.addShape(new Circle(150));
 			layer.addShape(new Rectangle(300,300));
 			layer.addShape(new Square(10,10,Color.BLACK,false,30));
 			layer.addShape(new Triangle(p1,p2,p3));
 			layer.addShape(new Hexagon(A,B,C,D,E,F));
-			layernull.addShape(new Hexagon(new toaDo(10,10),new toaDo(0,20),new toaDo(10,30),new toaDo(20,30),new toaDo(30,20),new toaDo(20,10)));
+			
+			layernull.addShape(new Hexagon(G,H,J,K,L,M));
 			layernull.getShape(0).reColor(Color.RED);
                         
                         layervisible.addShape(new Circle(150));
