@@ -1,52 +1,111 @@
 public class Triangle extends Shape{
-    private int x2;
-    private int y2;
-    private int x3;
-    private int y3;
-    public Triangle() {
+    private Point pointA = new Point(0,0),
+            pointB = new Point(0,1),
+            pointC = new Point(1,0);
+
+    /**
+     * triangle comparator
+     * @param otherTri
+     * @return true if they are duplicated
+     */
+    public boolean compareTriangle(Triangle otherTri) {
+        return (this.pointA.pointEquals(otherTri.pointA) &&
+                this.pointB.pointEquals(otherTri.pointB) &&
+                this.pointC.pointEquals(otherTri.pointC));
+    }
+
+    public Point getPointA() {
+        return pointA;
+    }
+
+    public void setPointA(Point pointA) {
+        this.pointA = pointA;
+    }
+
+    public Point getPointB() {
+        return pointB;
+    }
+
+    public void setPointB(Point pointB) {
+        this.pointB = pointB;
+    }
+
+    public Point getPointC() {
+        return pointC;
+    }
+
+    public void setPointC(Point pointC) {
+        this.pointC = pointC;
+    }
+
+    public Triangle(String color) {
+        super(color);
+    }
+
+    public Triangle(String color, Point pointA, Point pointB, Point pointC) {
+        super(color);
+        this.pointA = pointA;
+        this.pointB = pointB;
+        this.pointC = pointC;
+    }
+
+    @Override
+    protected boolean isExist() {
+        Point pointAB = new Point(pointB.getX() - pointA.getX(), pointB.getY() - pointA.getY());
+        Point pointCB = new Point(pointB.getX() - pointC.getX(), pointB.getY() - pointC.getY());
+        if (pointAB.getX() * pointCB.getY() == pointAB.getY() * pointCB.getX() || !exist)
+            return false;
+        else
+            return true;
+    }
+
+    @Override
+    public double sizeCal() {
+        if (isExist()) {
+            double lengthAB = Point.linearCal(pointA,pointB)
+                    ,lengthBC = Point.linearCal(pointB,pointC)
+                    ,lengthCA = Point.linearCal(pointA,pointC);
+            double halfPerimeter = lengthAB + lengthBC + lengthCA;
+            return Math.sqrt(
+                    halfPerimeter * (halfPerimeter - lengthAB) * (halfPerimeter - lengthBC) * (halfPerimeter - lengthCA));
+        }
+        else
+            return -1;
+    }
+
+    @Override
+    public void location() {
+        if (isExist()){
+            System.out.println(String.format(
+                    "Triangle with 3 points at: %s, %s, %s, Color %s"
+                    ,pointA.pointDraw(),pointB.pointDraw(),pointC.pointDraw(),getColor()));
+        }
+        else {
+            System.out.println("Can not define Triangle");
+        }
 
     }
-    public Triangle(int x, int y,int x2, int y2, int x3, int y3) {
-        super.x = x;
-        super.y = y;
-        this.x2 = x2;
-        this.y2 = y2;
-        this.x3 = x3;
-        this.y3 = y3;
-    }
-    public int getX2() {
-        return x2;
-    }
-    public void setX2(int x2) {
-        this.x2 = x2;
-    }
-    public int getY2() {
-        return y2;
-    }
-    public void setY2(int y2) {
-        this.y2 = y2;
-    }
-    public int getX3() {
-        return x3;
-    }
-    public void setX3(int x3) {
-        this.x3 = x3;
-    }
-    public int getY3() {
-        return y3;
-    }
-    public void setY3(int y3) {
-        this.y3 = y3;
-    }
+
     @Override
-    public void move(int x, int y) {
-        int a = this.x - x;
-        int b = this.y - y;
-        this.x = x;
-        this.y = y;
-        x2 = x2 - a;
-        y2 = y2 - b;
-        x3 = x3 - a;
-        y3 = y3 - b;
+    public void move(Point vectorMove) {
+        pointA.setX(pointA.getX() - vectorMove.getX());
+        pointA.setY(pointA.getY() - vectorMove.getY());
+
+        pointB.setX(pointB.getX() - vectorMove.getX());
+        pointB.setY(pointB.getY() - vectorMove.getY());
+
+        pointC.setX(pointC.getX() - vectorMove.getX());
+        pointC.setY(pointC.getY() - vectorMove.getY());
+    }
+
+    @Override
+    public void erase() {
+        if (isExist()) {
+            System.out.println(String.format("Remove triangle with 3 points at: %s, %s, %s",
+                    pointA.pointDraw(),pointB.pointDraw(),pointC.pointDraw()));
+        }
+        else {
+            System.out.println("Can not define Triangle");
+        }
     }
 }
