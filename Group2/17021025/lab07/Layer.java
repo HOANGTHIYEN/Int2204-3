@@ -1,28 +1,78 @@
 import java.util.ArrayList;
-import java.awt.Color;
-import java.awt.Graphics;
-import javax.swing.JFrame;
+import java.util.List;
 
 public class Layer {
-    boolean visiable;
-    ArrayList<Shape> layer = new ArrayList<Shape>();
+    private ArrayList<Shape> shapeList = new ArrayList<>();
+    boolean isVisible = true;
 
-    public Layer(boolean visiable) {
-        this.visiable = visiable;
+    /**
+     * isVisible getter
+     * @return isVisible
+     */
+    public boolean isVisible() {
+        return isVisible;
     }
-    public void xoa_hinh_trung() {
-        for (int i=0; i<layer.size(); i++)
-            for (int j=0; j<layer.size(); j++) {
-                if (i!=j && layer.get(i).equals(layer.get(j)) ) {
-                    layer.remove(j);
+
+    /**
+     * set isVisible
+     * if isVisible = false all shape can not be drawn
+     * @param visible
+     */
+    public void setVisible(boolean visible) {
+        isVisible = visible;
+        if (!isVisible) {
+            for (Shape curShape: shapeList) {
+                curShape.setExist(false);
+            }
+        }
+    }
+
+    /**
+     * Delete all Triangle
+     */
+    public void deleteTriangle() {
+        for (Shape curShape: shapeList) {
+            if (curShape instanceof Triangle) {
+                shapeList.remove(curShape);
+            }
+        }
+    }
+
+    /**
+     * add new shape
+     * @param _newShape
+     */
+    public void addShape(Shape _newShape) {
+        this.shapeList.add(_newShape);
+    }
+
+    /**
+     * @return shapeList
+     */
+    public ArrayList<Shape> getShapeList() {
+        return this.shapeList;
+    }
+
+    /**
+     * print a list of shape
+     */
+    public void printShapeList() {
+        for (Shape curShape: shapeList) {
+            curShape.location();
+        }
+    }
+
+    /**
+     * remove duplicated shape
+     */
+    public void removeDuplicate() {
+        for (int j = 0; j<shapeList.size(); j++) {
+            for (int i = j + 1; i<shapeList.size() ; i++) {
+                if (shapeList.get(j).compareShape(shapeList.get(i))) {
+                    shapeList.remove(i);
                 }
             }
-    }
-    public boolean getVisiable() {
-        return visiable;
+        }
     }
 
-    public void setVisiable(boolean visiable) {
-        this.visiable = visiable;
-    }
 }

@@ -18,7 +18,25 @@ public class Hexagon extends Shape {
 		this.hy[2] = y2;
 		this.hy[3] = y3;
 		this.hy[4] = y4;
-		this.hy[5] = y5;
+		this.hy[5] = y5;	
 	}
 
+	public int[] getHx() {
+		return hx;
+	}
+
+	public void setHx(int[] hx) {
+		this.hx = hx;
+	}
+
+	public int[] getHy() {
+		return hy;
+	}
+
+	public void setHy(int[] hy) {
+		this.hy = hy;
+	}
+	
+	
+	
 }
