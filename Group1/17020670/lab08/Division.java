@@ -3,22 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lap8;
+package lab8;
 
 /**
  *
  * @author Admin
  */
-public class Addition extends BinaryExpression
-{
+public class Division extends BinaryExpression{
     Expression left;
     Expression right;
-    public Addition(Expression left, Expression right) {
+    public Division(Expression left, Expression right) {
         this.left = left;
         this.right = right;
-        
     }
-   @Override
+    @Override
     public Expression left() {
         return this.left;
     }
@@ -29,11 +27,10 @@ public class Addition extends BinaryExpression
     }
     @Override
     public String toString() {
-        return left.toString() + "+" + right.toString();
+        return left.toString() + "/" + right.toString();
     }
     @Override
     public int evaluate() {
-        return this.left.evaluate()+this.right.evaluate();
+        return this.left.evaluate()/this.right.evaluate();
     }
 }
-
