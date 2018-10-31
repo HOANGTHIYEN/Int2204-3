@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
 
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Diagram extends JPanel {
@@ -25,17 +26,18 @@ public class Diagram extends JPanel {
 			}
 		}
 	}
+
 	public void paintComponent(Graphics g) {
-		Diagram d = new Diagram();
-		Layer lay1 = new Layer();
+		this.setBackground(Color.GREEN);
+		Layer lay = new Layer();
 		Circle c = new Circle(100, "red", true, 50, 50);
-		Square s = new Square(150,"black",true,34,300);
-		lay1.getList().add(c);
-		lay1.setVisible(true);
-		d.getLayer().add(lay1);
+		Square s = new Square(150, "black", true, 34, 300);
+		Triangle tg = new Triangle(300, 200, 150, 102, 100, 310, "blue", true, 0, 0);
+		Hexagon h = new Hexagon(560, 535, 485, 460, 485, 535, 510, 553, 553, 510, 467, 467, "black", true, 60, 80);
+		lay.setVisible(true);
 		super.paintComponent(g);
 
-		if (lay1.isVisible()) {
+		if (lay.isVisible()) {
 
 			if (c.isFilled()) {
 				g.setColor(Color.BLACK);
@@ -43,11 +45,19 @@ public class Diagram extends JPanel {
 			} else {
 				g.drawOval((int) c.getPos_x(), (int) c.getPos_y(), (int) c.getRadius(), (int) c.getRadius());
 			}
-			if(s.isFilled()){
-                g.setColor(Color.BLUE);
-                g.fillRect((int)s.getPos_x(), (int)s.getPos_y(), (int)s.getLength(), (int)s.getWidth());
-            }
-            else g.fillRect((int)s.getPos_x(), (int)s.getPos_y(), (int)s.getLength(), (int)s.getWidth());
+			if (s.isFilled()) {
+				g.setColor(Color.BLUE);
+				g.fillRect((int) s.getPos_x(), (int) s.getPos_y(), (int) s.getLength(), (int) s.getWidth());
+			} else
+				g.fillRect((int) s.getPos_x(), (int) s.getPos_y(), (int) s.getLength(), (int) s.getWidth());
+			if(h.isFilled()) {
+				g.setColor(Color.PINK);
+				g.fillPolygon(h.getHx(), h.getHy(), 6);
+			}
+			if(tg.isFilled()) {
+				g.setColor(Color.cyan);
+				g.fillPolygon(tg.getTX(), tg.getTY(), 3);
+			}
 		}
 
 	}
