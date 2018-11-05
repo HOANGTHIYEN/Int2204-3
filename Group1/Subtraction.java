@@ -1,0 +1,57 @@
+package com.lab07.bai01;
+
+public class Subtraction extends BinaryExpression {
+	private Expression left;
+	private Expression right;
+	public Expression getLeft() {
+		return left;
+	}
+	public void setLeft(Expression left) {
+		this.left = left;
+	}
+	public Expression getRight() {
+		return right;
+	}
+	public void setRight(Expression right) {
+		this.right = right;
+	}
+	public Subtraction(Expression left, Expression right) {
+		super();
+		this.left = left;
+		this.right = right;
+	}
+	public Subtraction() {
+		
+	}
+	@Override
+	public String toString() {
+		return left.toString()+ " - " +right.toString();
+				
+	}
+	@Override
+	public int evaluate() {
+		return  left.evaluate()-right.evaluate();
+	}
+	/*@Override
+	public Expression left() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public Expression right() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+*/
+	@Override
+	public Expression left() {
+		// TODO Auto-generated method stub
+		return left;
+	}
+	@Override
+	public Expression right() {
+		// TODO Auto-generated method stub
+		return right;
+	}}

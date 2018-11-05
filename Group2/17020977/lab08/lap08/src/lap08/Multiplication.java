@@ -3,37 +3,37 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lap8;
+package lap08;
 
 /**
  *
  * @author Admin
  */
-public class Addition extends BinaryExpression
-{
+ class Multiplication extends BinaryExpression{
     Expression left;
     Expression right;
-    public Addition(Expression left, Expression right) {
+    public Multiplication(Expression left, Expression right) {
         this.left = left;
         this.right = right;
-        
     }
-   @Override
+    
+    @Override
+    public int evaluate() {
+        return (left.evaluate()*right.evaluate());
+    }
+
+    @Override
     public Expression left() {
-        return this.left;
+        return left;
     }
 
     @Override
     public Expression right() {
-        return this.right;
+        return right;
     }
+
     @Override
     public String toString() {
-        return left.toString() + "+" + right.toString();
-    }
-    @Override
-    public int evaluate() {
-        return this.left.evaluate()+this.right.evaluate();
+       return (left.toString()+"*"+right.toString());
     }
 }
-
