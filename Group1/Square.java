@@ -1,31 +1,35 @@
-package com.lab06;
+package com.lab07.bai01;
 
-public class Square extends Rectangle {
-	protected int side;
+public class Square extends Expression {
+	private Expression expression;
 
-	public int getSide() {
-		return side;
-	}
-	public Square() {}
-	public Square(int pX,int pY,int side,String color,boolean filled) {
-		super(pX,pY,side, side, color, filled);
-
-	}
-	public void setWidth(int side) {
-		super.width=side;
-		super.length=side;
-		
-	}
-	public void setLength(int side) {
-		super.length=side;
-		super.width=side;
+	public Square(Expression expression) {
+		super();
+		this.expression = expression;
 	}
 
-	public void setSide(int side) {
-		this.side = side;
-		this.length=side;
-		this.width=side;
+	//@Override
+	public String toString() {
+
+		return expression.toString()+"^2";
 	}
-	
+	//@Override
+	public String toString(Expression expression) {
+		return "("+expression.toString()+")^2";  
+	}
+
+	public Expression getExpression() {
+		return expression;
+	}
+
+	public void setExpression(Expression expression) {
+		this.expression = expression;
+	}
+
+	//@Override
+	public int evaluate() {
+       
+		return expression.evaluate()*expression.evaluate();
+	}
 
 }

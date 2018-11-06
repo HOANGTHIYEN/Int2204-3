@@ -4,10 +4,13 @@ import anhdh.calculation.Addition;
 import anhdh.calculation.Division;
 import anhdh.calculation.Multiplication;
 import anhdh.calculation.Subtraction;
-import com.microsoft.aspnet.signalr.HubConnection;
-import com.microsoft.aspnet.signalr.HubConnectionBuilder;
+import com.microsoft.signalr.HubConnection;
+import com.microsoft.signalr.HubConnectionBuilder;
+import org.codehaus.jackson.map.ObjectMapper;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ExpressionTest {
     public static void main(String[] args) {
@@ -18,22 +21,35 @@ public class ExpressionTest {
     }
 
     private  void Test(){
+        HubConnection hubConnection = null;
         try {
-            HubConnection hubConnection = new HubConnectionBuilder().withUrl("http://raddevus-001-site1.btempurl.com/Pawns").build();
-            hubConnection.start();
+            //hubConnection = HubConnectionBuilder.create("https://localhost:5001/gamehub").withHeader("token", "ahihi").build();
+            PlayerEntity playerEntity = new PlayerEntity();
+            playerEntity.Name = "anhdh";
+            ObjectMapper objectMapper = new ObjectMapper();
+            String token = objectMapper.writeValueAsString(playerEntity);
+            hubConnection = HubConnectionBuilder.create("http://localhost:5000/gamehub").withHeader("token", token).build();
+            HubConnection finalHubConnection = hubConnection;
+            hubConnection.start().subscribe(()->{
+                finalHubConnection.send("ClientSendAction", "anhdh", "1699", Direction.Bottom);
+            });
 //            hubConnection.on("send", (message)-> ((Runnable) () -> {
 //                System.out.println("receive message" + message);
 //                System.out.println("ahihi");
 //            }).run(), String.class);
-            hubConnection.on("Send", (message)-> {
-                System.out.println("receive message" + message);
-                System.out.println("ahihi");
-            }, TestSignal.class);
 
-            hubConnection.send("LEN", "Abc");
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        hubConnection.on("ServerSendAction", (user, room) -> {
+            System.out.printf("New Message: %s %s%n", user,  room);
+        }, String.class, String.class);
+        hubConnection.on("ServerSendDirection", (direction) -> {
+            int i = (int)(Double.parseDouble(direction.toString()));
+            System.out.println(Direction.get(i));
+        }, Object.class);
+
     }
 
     public static void method1() {
@@ -83,9 +99,26 @@ public class ExpressionTest {
 
 }
 
-class TestSignal{
-    public  String H;
-    public  String M;
-    public  ArrayList<Integer> A;
-    public  int I;
+enum Direction
+{
+    Left(1),
+    Top(2),
+    Right(3),
+    Bottom(4);
+    private final int id;
+    Direction(int id) { this.id = id; }
+    public int getValue() { return id; }
+    public static Direction get(int id) {
+        if(id == 1) return Direction.Left;
+        else if(id == 2) return  Direction.Top;
+        else if(id == 3) return  Direction.Right;
+        else return Direction.Bottom;
+    }
+}
+
+class PlayerEntity
+{
+    public String Name ;
+    public String ConnectionId;
+    public Object Client;
 }

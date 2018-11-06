@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="com.microsoft.signalr:signalr:1.0.0-preview3-35501" type="repository">
+    <properties maven-id="com.microsoft.signalr:signalr:1.0.0-preview3-35501" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/signalr-1.0.0-preview3-35501.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.8.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okhttp-3.11.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okio-1.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rxjava-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/reactive-streams-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
