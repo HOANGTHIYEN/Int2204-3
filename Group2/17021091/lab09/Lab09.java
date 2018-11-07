@@ -48,9 +48,14 @@ public class Lab09 {
         File f = new File(folderPath);
         if(f.isDirectory()){
             String[] l = f.list();
-            for(String s : l)
-                if(s.equals(fileName))
+            for(String s : l){
+                if(s.equals(fileName)){
                     return new File(f.getAbsolutePath() + "\\" + fileName);
+                }
+                File ff = findFileByName(f.getAbsolutePath() + "\\" + s, fileName);
+                if(ff != null)
+                    return ff;
+            }
         }
         return null;
     }
@@ -75,7 +80,7 @@ public class Lab09 {
             System.out.println(ex.getMessage());
         }
         //test 1.d
-        if(findFileByName("C:\\Users\\Genius\\Documents", "sound.vbs") != null)
-            System.out.println(findFileByName("C:\\Users\\Genius\\Documents", "sound.vbs").getAbsolutePath());
+        if(findFileByName("C:\\Users\\Genius\\Documents", "d.txt") != null)
+            System.out.println(findFileByName("C:\\Users\\Genius\\Documents", "d.txt").getAbsolutePath());
     }
 }
